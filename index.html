@@ -327,7 +327,6 @@
             dot.element.addEventListener("touchcancel", function(event) { fingerUp(dotName) })
             dot.element.addEventListener("touchend", function(event) { fingerUp(dotName) })
         })
-        window.addEventListener("touchstart", function(event) { event.preventDefault() })
         if (navigator.userAgent.toLowerCase().match(/mobile/i)) _GAME.classList.add("mobile")
         findNext()
     </script>
