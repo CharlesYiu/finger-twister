@@ -15,10 +15,10 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             transition-duration: 0.5s;
             -webkit-touch-callout: none;
-			-webkit-user-select: none;
-			-khtml-user-select: none;
-			-ms-user-select: none;
-			user-select: none;
+	    -webkit-user-select: none;
+	    -khtml-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
         }
         #game {
             position: fixed;
@@ -49,13 +49,13 @@
             margin: 10px;
         }
         .mobile > div > div > h1 { color: transparent; }
-        @keyframes test {
+        @keyframes lost {
             0% { background-color: rgb(145, 45, 39); }
             50% { background-color: transparent; }
             100% { background-color: rgb(145, 45, 39); }
         }
         .lost > div > div > span {
-            animation-name: test;
+            animation-name: lost;
             animation-duration: 4s;
         }
         .bold { background-color: black !important; }
@@ -81,9 +81,7 @@
             }
         }
         @media screen and (max-width: 340px) and (min-height: 501px) {
-            #footer {
-                font-size: 4.5vw;
-            }
+            #footer { font-size: 4.5vw; }
             #game > div > div > h1 { font-size: 9vw; }
             #game > div > div > span {
                 width: 18vw;
