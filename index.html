@@ -58,6 +58,7 @@
             animation-name: lost;
             animation-duration: 4s;
         }
+        .lost > div > div > span.bold { animation: none; }
         .bold { background-color: black !important; }
         #green > span { background-color: rgb(146, 199, 65); }
         #yellow > span { background-color: rgb(243, 232, 86); }
@@ -312,9 +313,9 @@
             _GAME.classList.add("lost")
             setTimeout(function() {
                 _GAME.classList.remove("lost")
-                ignore = false
                 dot.element.classList.remove("bold")
                 findNext()
+                ignore = false
             }, 4000)
         }
         window.addEventListener("keydown", function(event) { if (Object.keys(dots).includes(event.key)) fingerDown(event.key) })
